@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.4.0'
 
 gem 'sinatra', '>= 1.4'
 gem 'sinatra-flash', '0.3.0'
@@ -9,7 +9,7 @@ group :development, :test do
   gem 'cucumber-sinatra', '0.5.0'
   gem 'capybara', '2.4.4'
 
-  gem 'rspec', '3.3.0'
+  gem 'rspec', '3.6.0'
   gem 'rspec-autotest', '1.0.0'
 
   gem 'rack-test', '0.6.3'
