@@ -68,7 +68,7 @@ class HangpersonGame
     #check display, if display == word, done
     if self.word_with_guesses.eql? @word
       return :win
-    elsif @guesses.length + @wrong_guesses.length ==7
+    elsif @wrong_guesses.length >=7
       return :lose
     else
       return :play
@@ -76,4 +76,6 @@ class HangpersonGame
   end
 
 end
+
+
 
