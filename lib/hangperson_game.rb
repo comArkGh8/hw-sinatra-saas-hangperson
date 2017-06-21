@@ -63,16 +63,17 @@ class HangpersonGame
     end
     return display
   end
+  
+  def check_win_or_lose
+    #check display, if display == word, done
+    if self.word_with_guesses.eql? @word
+      return :win
+    elsif @guesses.length + @wrong_guesses.length ==7
+      return :lose
+    else
+      return :play
+    end
+  end
 
 end
 
-garp = HangpersonGame.new('garply')
-
-garp.guess('A')
-garp.guess('a')
-garp.guess('Q')
-garp.guess('q')
-garp.guess('p')
-puts '1) ' + garp.guesses
-puts garp.wrong_guesses
-puts garp.word_with_guesses
